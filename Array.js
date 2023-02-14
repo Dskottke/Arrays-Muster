@@ -262,12 +262,12 @@ const response = {
             "created": "2017-11-04T22:34:53.659Z"
         }]
 };
-function getAllCharactersAlive(characters) {
+function getAllHumansAlive(characters) {
     return characters.filter(character => {
         return character.status === "Alive" && character.species === "Human";
     });
 }
-const charactersAlive = getAllCharactersAlive(response.results);
+const charactersAlive = getAllHumansAlive(response.results);
 console.log(charactersAlive);
 function getAllCharactersNames(characters) {
     return characters.map(character => {
