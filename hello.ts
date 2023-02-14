@@ -263,7 +263,7 @@ const response = {
     }]
 }
 
-function getAllCharactersAlive(characters: { name: string, status: string, species: string }[]) {
+function getAllCharactersAlive(characters: { status: string, species: string }[]) {
     return characters.filter(character => {
         return character.status === "Alive" && character.species === "Human"
     })
