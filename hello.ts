@@ -263,13 +263,13 @@ const response = {
     }]
 }
 
-function getAllCharactersAlive(characters: { status: string, species: string }[]) {
+function getAllHumansAlive(characters: { status: string, species: string }[]) {
     return characters.filter(character => {
         return character.status === "Alive" && character.species === "Human"
     })
 }
 
-const charactersAlive = getAllCharactersAlive(response.results)
+const charactersAlive = getAllHumansAlive(response.results)
 console.log(charactersAlive)
 
 function getAllCharactersNames(characters: { name: string }[]) {
